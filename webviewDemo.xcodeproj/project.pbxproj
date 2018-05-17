@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6164426620A99B580046C325 /* SLVoiceRecodManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6164426520A99B580046C325 /* SLVoiceRecodManager.m */; };
+		6164426920AA85A50046C325 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6164426820AA85A50046C325 /* JavaScriptCore.framework */; };
+		6164426E20AADB640046C325 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6164426D20AADB640046C325 /* AVFoundation.framework */; };
+		6164427220AADDA20046C325 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6164427020AADDA20046C325 /* libmp3lame.a */; };
+		618ED1BB20AC1A840013C754 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 618ED1B320AC1A830013C754 /* WebViewJavascriptBridgeBase.m */; };
+		618ED1BC20AC1A840013C754 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 618ED1B420AC1A830013C754 /* WKWebViewJavascriptBridge.m */; };
+		618ED1BD20AC1A840013C754 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 618ED1B520AC1A830013C754 /* WebViewJavascriptBridge.m */; };
+		618ED1BE20AC1A840013C754 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 618ED1B820AC1A830013C754 /* WebViewJavascriptBridge_JS.m */; };
+		618ED1C020AC273D0013C754 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618ED1BF20AC273D0013C754 /* WebKit.framework */; };
 		61A47200207F447700956295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A471FF207F447700956295 /* AppDelegate.m */; };
 		61A47203207F447700956295 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A47202207F447700956295 /* ViewController.m */; };
 		61A47206207F447700956295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A47204207F447700956295 /* Main.storyboard */; };
@@ -35,6 +44,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6164426420A99B580046C325 /* SLVoiceRecodManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLVoiceRecodManager.h; sourceTree = "<group>"; };
+		6164426520A99B580046C325 /* SLVoiceRecodManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLVoiceRecodManager.m; sourceTree = "<group>"; };
+		6164426820AA85A50046C325 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6164426D20AADB640046C325 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6164427020AADDA20046C325 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		6164427120AADDA20046C325 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		618ED1B320AC1A830013C754 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		618ED1B420AC1A830013C754 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		618ED1B520AC1A830013C754 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		618ED1B620AC1A830013C754 /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		618ED1B720AC1A830013C754 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		618ED1B820AC1A830013C754 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		618ED1B920AC1A830013C754 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		618ED1BA20AC1A830013C754 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		618ED1BF20AC273D0013C754 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		61A471FB207F447700956295 /* webviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webviewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A471FE207F447700956295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61A471FF207F447700956295 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +82,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618ED1C020AC273D0013C754 /* WebKit.framework in Frameworks */,
+				6164427220AADDA20046C325 /* libmp3lame.a in Frameworks */,
+				6164426E20AADB640046C325 /* AVFoundation.framework in Frameworks */,
+				6164426920AA85A50046C325 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +106,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6164426720AA85A50046C325 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				618ED1BF20AC273D0013C754 /* WebKit.framework */,
+				6164426D20AADB640046C325 /* AVFoundation.framework */,
+				6164426820AA85A50046C325 /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6164426F20AADDA20046C325 /* lampFramwork */ = {
+			isa = PBXGroup;
+			children = (
+				6164427020AADDA20046C325 /* libmp3lame.a */,
+				6164427120AADDA20046C325 /* lame.h */,
+			);
+			path = lampFramwork;
+			sourceTree = "<group>";
+		};
+		618ED1B220AC1A830013C754 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				618ED1B320AC1A830013C754 /* WebViewJavascriptBridgeBase.m */,
+				618ED1B420AC1A830013C754 /* WKWebViewJavascriptBridge.m */,
+				618ED1B520AC1A830013C754 /* WebViewJavascriptBridge.m */,
+				618ED1B620AC1A830013C754 /* WebViewJavascriptBridge_JS.h */,
+				618ED1B720AC1A830013C754 /* WebViewJavascriptBridgeBase.h */,
+				618ED1B820AC1A830013C754 /* WebViewJavascriptBridge_JS.m */,
+				618ED1B920AC1A830013C754 /* WebViewJavascriptBridge.h */,
+				618ED1BA20AC1A830013C754 /* WKWebViewJavascriptBridge.h */,
+			);
+			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
 		61A471F2207F447700956295 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +147,7 @@
 				61A47216207F447800956295 /* webviewDemoTests */,
 				61A47221207F447800956295 /* webviewDemoUITests */,
 				61A471FC207F447700956295 /* Products */,
+				6164426720AA85A50046C325 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +164,14 @@
 		61A471FD207F447700956295 /* webviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				618ED1B220AC1A830013C754 /* WebViewJavascriptBridge */,
+				6164426F20AADDA20046C325 /* lampFramwork */,
 				61A471FE207F447700956295 /* AppDelegate.h */,
 				61A471FF207F447700956295 /* AppDelegate.m */,
 				61A47201207F447700956295 /* ViewController.h */,
 				61A47202207F447700956295 /* ViewController.m */,
+				6164426420A99B580046C325 /* SLVoiceRecodManager.h */,
+				6164426520A99B580046C325 /* SLVoiceRecodManager.m */,
 				61A47204207F447700956295 /* Main.storyboard */,
 				61A47207207F447700956295 /* Assets.xcassets */,
 				61A47209207F447700956295 /* LaunchScreen.storyboard */,
@@ -265,9 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618ED1BE20AC1A840013C754 /* WebViewJavascriptBridge_JS.m in Sources */,
 				61A47203207F447700956295 /* ViewController.m in Sources */,
 				61A4720E207F447700956295 /* main.m in Sources */,
+				6164426620A99B580046C325 /* SLVoiceRecodManager.m in Sources */,
 				61A47200207F447700956295 /* AppDelegate.m in Sources */,
+				618ED1BB20AC1A840013C754 /* WebViewJavascriptBridgeBase.m in Sources */,
+				618ED1BD20AC1A840013C754 /* WebViewJavascriptBridge.m in Sources */,
+				618ED1BC20AC1A840013C754 /* WKWebViewJavascriptBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,8 +503,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKG7VM7M7R;
 				INFOPLIST_FILE = webviewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/webviewDemo/lampFramwork",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "----.webviewDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,8 +521,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKG7VM7M7R;
 				INFOPLIST_FILE = webviewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/webviewDemo/lampFramwork",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "----.webviewDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
