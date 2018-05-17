@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "webviewDemo/ViewController.m"
-            timestampString = "548235445.102299"
+            timestampString = "548235823.727106"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
-            landmarkName = "-registerJeCallBackMethod"
+            landmarkName = "-userContentController:didReceiveScriptMessage:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "webviewDemo/ViewController.m"
-            timestampString = "548235445.1023819"
+            timestampString = "548235823.727204"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
             endingLineNumber = "76"
-            landmarkName = "-registerJeCallBackMethod"
+            landmarkName = "-userContentController:didReceiveScriptMessage:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "webviewDemo/ViewController.m"
-            timestampString = "548235445.102439"
+            timestampString = "548235823.727278"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
             endingLineNumber = "89"
-            landmarkName = "-webview"
+            landmarkName = "-registerJeCallBackMethod"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -14,6 +14,8 @@
 @interface ViewController ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 @property(nonatomic,strong)WKWebView *webview;
 @property(nonatomic,strong)WKWebViewConfiguration *config;
+
+
 @property WebViewJavascriptBridge *bridge;
 @end
 
