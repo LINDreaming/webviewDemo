@@ -2,8 +2,8 @@
 //  SLVoiceRecodVC.m
 //  webviewDemo
 //
-//  Created by 林喜(平安科技北京共享开发中心三村工程分组) on 2018/5/14.
-//  Copyright © 2018年 林喜(平安科技北京共享开发中心三村工程分组). All rights reserved.
+//  Created by 林喜(linxi ) on 2018/5/14.
+//  Copyright © 2018年 林喜(linxi ). All rights reserved.
 //
 
 #import "SLVoiceRecodManager.h"
@@ -45,20 +45,35 @@ static SLVoiceRecodManager *manager = nil;
     //2.获取文件路径
     self.recordFileUrl = [NSURL URLWithString:recordUrl];
     
+            NSMutableDictionary *setting = [NSMutableDictionary dictionary];
+            //录音格式
+            [setting setObject:@(kAudioFormatLinearPCM) forKey:AVFormatIDKey];
+            //采样率，8000/11025/22050/44100/96000（影响音频的质量）,8000是电话采样率
+            [setting setObject:@(44100) forKey:AVSampleRateKey];
+            //通道 , 1/2
+            [setting setObject:@(2) forKey:AVNumberOfChannelsKey];
+            //采样点位数，分为8、16、24、32, 默认16
+            [setting setObject:@(16) forKey:AVLinearPCMBitDepthKey];
+            //是否使用浮点数采样
+            [setting setObject:@(YES) forKey:AVLinearPCMIsFloatKey];
+            // 录音质量
+            [setting setObject:@(AVAudioQualityMax) forKey:AVEncoderAudioQualityKey];
+    
     //设置参数
-    NSDictionary *recordSetting = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                   //采样率  8000/11025/22050/44100/96000（影响音频的质量）
-                                   [NSNumber numberWithFloat: 8000.0],AVSampleRateKey,
-                                   // 音频格式
-                                   [NSNumber numberWithInt: kAudioFormatLinearPCM],AVFormatIDKey,
-                                   //采样位数  8、16、24、32 默认为16
-                                   [NSNumber numberWithInt:16],AVLinearPCMBitDepthKey,
-                                   // 音频通道数 1 或 2
-                                   [NSNumber numberWithInt: 2], AVNumberOfChannelsKey,
-                                   //录音质量
-                                   [NSNumber numberWithInt:AVAudioQualityHigh],AVEncoderAudioQualityKey,
-                                   nil];
-    _avRecorder = [[AVAudioRecorder alloc] initWithURL:[NSURL URLWithString:recordUrl] settings:recordSetting error:nil];
+//    NSDictionary *recordSetting = [[NSDictionary alloc] initWithObjectsAndKeys:
+//                                   //采样率  8000/11025/22050/44100/96000（影响音频的质量）
+//                                   [NSNumber numberWithFloat: 8000.0],AVSampleRateKey,
+//                                   // 音频格式
+//                                   [NSNumber numberWithInt: kAudioFormatLinearPCM],AVFormatIDKey,
+//                                   //采样位数  8、16、24、32 默认为16
+//                                   [NSNumber numberWithInt:16],AVLinearPCMBitDepthKey,
+//                                   // 音频通道数 1 或 2
+//                                   [NSNumber numberWithInt: 2], AVNumberOfChannelsKey,
+//                                   //录音质量
+//                                   [NSNumber numberWithInt:AVAudioQualityMax],AVEncoderAudioQualityKey,@(YES),AVLinearPCMIsFloatKey,
+//                                   nil];
+
+    _avRecorder = [[AVAudioRecorder alloc] initWithURL:[NSURL URLWithString:recordUrl] settings:setting error:nil];
     if (_avRecorder) {
         _avRecorder.meteringEnabled = YES;
         [_avRecorder prepareToRecord];

@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dSx-Hj-qTr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--主页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController title="主页" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="SNW-15-ywq">
+                                <rect key="frame" x="147.5" y="398" width="119" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd9-17-Ogg">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="原生交互"/>
+                                        <connections>
+                                            <segue destination="f4x-9F-kBT" kind="show" id="nlb-eB-knL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awU-G6-hcD">
+                                        <rect key="frame" x="0.0" y="64" width="119" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="webView交互"/>
+                                        <connections>
+                                            <segue destination="Fjz-ES-Rlt" kind="show" id="NTs-Fu-5Wq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SNW-15-ywq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1cY-7A-UsW"/>
+                            <constraint firstItem="SNW-15-ywq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eij-dm-NPN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="主页" id="O8K-01-vH6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="868.11594202898561" y="14.732142857142856"/>
+        </scene>
+        <!--原生-->
+        <scene sceneID="f1X-6L-ltI">
+            <objects>
+                <viewController title="原生" id="f4x-9F-kBT" customClass="DBRecordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zco-sR-UgH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="lbs-Ca-BTv">
+                                <rect key="frame" x="176" y="408.5" width="62" height="79"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es1-ZR-kXc">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
+                                        <state key="normal" title="开始录音"/>
+                                        <connections>
+                                            <action selector="startRecord:" destination="f4x-9F-kBT" eventType="touchUpInside" id="SJt-aK-wG1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vs4-zj-u3j">
+                                        <rect key="frame" x="0.0" y="49" width="62" height="30"/>
+                                        <state key="normal" title="结束录音"/>
+                                        <connections>
+                                            <action selector="stopRecord:" destination="f4x-9F-kBT" eventType="touchUpInside" id="i2X-qs-yHm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lbs-Ca-BTv" firstAttribute="centerX" secondItem="Zco-sR-UgH" secondAttribute="centerX" id="VOM-cW-LI2"/>
+                            <constraint firstItem="lbs-Ca-BTv" firstAttribute="centerY" secondItem="Zco-sR-UgH" secondAttribute="centerY" id="g4V-6N-Jc5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WVZ-Ng-klu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="原生" id="G0z-fr-i9S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5K-B4-dkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="429"/>
+        </scene>
+        <!--webView-->
+        <scene sceneID="MYA-Bc-LiZ">
+            <objects>
+                <viewController id="Fjz-ES-Rlt" customClass="DBWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uvj-tz-H6I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pur-TK-Mje"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="webView" id="Xb1-Za-841"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5h-1C-MU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="-249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NAj-jT-ZXA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dSx-Hj-qTr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8jR-Ea-Od1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FQT-xN-Eq4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YW3-Ya-9qa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.028985507246382" y="14.732142857142856"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B915FF246A4A1D00374D8A /* DBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B915FE246A4A1D00374D8A /* DBRecordViewController.m */; };
+		35B91602246A4DA500374D8A /* DBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B91601246A4DA500374D8A /* DBWebViewController.m */; };
 		6164426620A99B580046C325 /* SLVoiceRecodManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6164426520A99B580046C325 /* SLVoiceRecodManager.m */; };
 		6164426920AA85A50046C325 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6164426820AA85A50046C325 /* JavaScriptCore.framework */; };
 		6164426E20AADB640046C325 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6164426D20AADB640046C325 /* AVFoundation.framework */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35B915FD246A4A1D00374D8A /* DBRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBRecordViewController.h; sourceTree = "<group>"; };
+		35B915FE246A4A1D00374D8A /* DBRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBRecordViewController.m; sourceTree = "<group>"; };
+		35B91600246A4DA500374D8A /* DBWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBWebViewController.h; sourceTree = "<group>"; };
+		35B91601246A4DA500374D8A /* DBWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBWebViewController.m; sourceTree = "<group>"; };
 		6164426420A99B580046C325 /* SLVoiceRecodManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLVoiceRecodManager.h; sourceTree = "<group>"; };
 		6164426520A99B580046C325 /* SLVoiceRecodManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLVoiceRecodManager.m; sourceTree = "<group>"; };
 		6164426820AA85A50046C325 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -170,6 +176,10 @@
 				61A471FF207F447700956295 /* AppDelegate.m */,
 				61A47201207F447700956295 /* ViewController.h */,
 				61A47202207F447700956295 /* ViewController.m */,
+				35B915FD246A4A1D00374D8A /* DBRecordViewController.h */,
+				35B915FE246A4A1D00374D8A /* DBRecordViewController.m */,
+				35B91600246A4DA500374D8A /* DBWebViewController.h */,
+				35B91601246A4DA500374D8A /* DBWebViewController.m */,
 				6164426420A99B580046C325 /* SLVoiceRecodManager.h */,
 				6164426520A99B580046C325 /* SLVoiceRecodManager.m */,
 				61A47204207F447700956295 /* Main.storyboard */,
@@ -333,11 +343,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				618ED1BE20AC1A840013C754 /* WebViewJavascriptBridge_JS.m in Sources */,
+				35B915FF246A4A1D00374D8A /* DBRecordViewController.m in Sources */,
 				61A47203207F447700956295 /* ViewController.m in Sources */,
 				61A4720E207F447700956295 /* main.m in Sources */,
 				6164426620A99B580046C325 /* SLVoiceRecodManager.m in Sources */,
 				61A47200207F447700956295 /* AppDelegate.m in Sources */,
 				618ED1BB20AC1A840013C754 /* WebViewJavascriptBridgeBase.m in Sources */,
+				35B91602246A4DA500374D8A /* DBWebViewController.m in Sources */,
 				618ED1BD20AC1A840013C754 /* WebViewJavascriptBridge.m in Sources */,
 				618ED1BC20AC1A840013C754 /* WKWebViewJavascriptBridge.m in Sources */,
 			);
@@ -503,7 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RKG7VM7M7R;
+				DEVELOPMENT_TEAM = DGJ66H38P5;
 				INFOPLIST_FILE = webviewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
